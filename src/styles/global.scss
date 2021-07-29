@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Color */
+  --body-color: #f8f8f8;
+  --black-color: #29292e;
+
+  /* Fonts */
+  --poppins-font: "Poppins", sans-serif;
+  --robotto-font: "Roboto", sans-serif;
+}
+
+body {
+  background: var(--body-color);
+  color: var(--black-color);
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 1rem var(--robotto-font);
+}

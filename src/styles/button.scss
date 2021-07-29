@@ -1,0 +1,40 @@
+:root {
+  --purple-color: #835afd;
+  --white-color: #fff;
+  --body-color: #f8f8f8;
+  --black-color: #29292e;
+  --separator-color: #a8a8b3;
+  --redOrange-button-color: #ea4335;
+}
+
+.button {
+  margin-top: 4rem;
+  height: 3.125rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  background: var(--purple-color);
+  color: var(--white-color);
+  padding: 0 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  border: 0;
+
+  transition: filter 0.2s;
+
+  img {
+    margin-right: 0.5rem;
+  }
+
+  &:not(:disabled):hover {
+    filter: brightness(0.9);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}

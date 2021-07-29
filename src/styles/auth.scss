@@ -1,0 +1,158 @@
+:root {
+  --purple-color: #835afd;
+  --white-color: #fff;
+  --body-color: #f8f8f8;
+  --black-color: #29292e;
+  --separator-color: #a8a8b3;
+  --redOrange-button-color: #ea4335;
+  --grey-color: #737388;
+  --pinkPurple-color: #e559f9;
+
+  --poppins-font: "Poppins", sans-serif;
+  --robotto-font: "Roboto", sans-serif;
+}
+
+#page-auth {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+
+  aside {
+    flex: 7;
+
+    background: var(--purple-color);
+    color: var(--white-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 7.5rem 5.5rem;
+  }
+
+  img {
+    max-width: 20rem;
+  }
+
+  strong {
+    font: 700 2.25rem var(--poppins-font);
+    line-height: 2.625rem;
+    margin-top: 1rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    color: var(--body-color);
+  }
+
+  main {
+    flex: 8;
+
+    padding: 0 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 20rem;
+    align-items: stretch;
+    text-align: center;
+
+    > img {
+      align-self: center;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin: 4rem 0 1.5rem;
+      font-family: var(--poppins-font);
+    }
+
+    form {
+      input {
+        height: 3.625rem;
+        border-radius: 0.5rem;
+        padding: 0 1rem;
+        background: var(--white-color);
+        border: 0.0625rem solid #a8a8b3;
+      }
+
+      button {
+        margin-top: 1rem;
+      }
+
+      button,
+      input {
+        width: 100%;
+      }
+    }
+
+    p {
+      font-size: 0.875rem;
+      color: var(--grey-color);
+      margin-top: 1rem;
+
+      a {
+        color: var(--pinkPurple-color);
+      }
+    }
+  }
+
+  .creat-room {
+    margin-top: 4rem;
+    height: 3.125rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    background: var(--redOrange-button-color);
+    color: var(--white-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    border: 0;
+
+    transition: filter 0.2s;
+
+    img {
+      margin-right: 0.5rem;
+    }
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+
+  .separator {
+    font-size: 0.875rem;
+    color: var(--separator-color);
+
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      flex: 1;
+      height: 0.0625rem;
+      background: var(--separator-color);
+      margin-right: 1rem;
+    }
+
+    &::after {
+      content: "";
+      flex: 1;
+      height: 0.0625rem;
+      background: var(--separator-color);
+      margin-left: 1rem;
+    }
+  }
+}
