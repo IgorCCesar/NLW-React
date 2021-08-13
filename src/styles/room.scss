@@ -63,6 +63,7 @@
         box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.04);
         resize: vertical;
         min-height: 8.125rem;
+        resize: none;
       }
 
       .form-footer {
@@ -105,6 +106,10 @@
           }
         }
       }
+    }
+
+    .question-list {
+      margin-top: 2rem;
     }
   }
 }
