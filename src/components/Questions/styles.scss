@@ -1,7 +1,8 @@
 :root {
   --textarea-color: #fefefe;
   --black-color: #29292e;
-  --grey-color: #737388;
+  --grey-color: #737380;
+  --purple-color: #835afd;
 }
 
 .question {
@@ -38,6 +39,32 @@
         margin-left: 0.5rem;
         color: var(--grey-color);
         font-size: 0.875rem;
+      }
+    }
+
+    button {
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      transition: filter 0.2s;
+
+      &.like-button {
+        display: flex;
+        align-items: flex-end;
+        color: var(--grey-color);
+        gap: 0.5em;
+
+        &.liked {
+          color: var(--purple-color);
+
+          svg path {
+            stroke: var(--purple-color);
+          }
+        }
+      }
+
+      &:hover {
+        filter: brightness(0.7);
       }
     }
   }
